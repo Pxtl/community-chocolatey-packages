@@ -24,6 +24,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://learn.microsoft.com/en-us/sql/integration-services/devops/ssis-devops-standalone</docsUrl>
     <tags>standalonessisdevopstools ssis devops command-line</tags>
+    <iconUrl>https://rawcdn.githack.com/Pxtl/community-chocolatey-packages/3e13daaab46788f5d652bb0afc68149fd174bbae/packages/standalone-ssis-devops-tools/Microsoft.VisualStudio.Services.Icons.ico</iconUrl>
     <summary>Standalone SSIS DevOps Tools provide a set of executables to do SSIS CICD tasks</summary>
     <description>
       Chocolatey online-installer of the Microsoft 'Standalone SSIS DevOps Tools'.  The package is unpacked into a
