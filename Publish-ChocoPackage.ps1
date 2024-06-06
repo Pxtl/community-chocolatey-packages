@@ -6,7 +6,7 @@
 param (
 	# path of the directory containing the chocolatey package to push
 	[Parameter(Mandatory, ValueFromPipeline)]
-	[IO.DirectoryInfo] $PackageToPublishDirPath,
+	[IO.DirectoryInfo] $PackageDirPath,
 
 	# defaults to parent folder of this script if not provided.
 	[IO.DirectoryInfo] $WorkingDirPath = $null,
@@ -25,7 +25,7 @@ process {
 	}
 
 	try {
-		Push-Location (Join-Path $WorkingDirPath.FullName $PackageToPublishDirPath)
+		Push-Location (Join-Path $WorkingDirPath.FullName $PackageDirPath)
 		Remove-Item *.nupkg
 		choco pack
 		Get-ChildItem *.nupkg | choco push $_
